@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEBEB"
+    android:padding="20dp"
+    android:paddingTop="20dp"
+    tools:context=".UserAccountManagement.SignUp.PatientSignUpFragment">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivBackPatientSignUp"
+            android:layout_width="64dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/backarrow" />
+
+        <TextView
+            android:id="@+id/tvSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:text="Sign Up"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="48sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="0dp"
+            android:paddingLeft="7dp"
+            android:text="Name"
+            android:textColor="@color/black"
+            android:textSize="26sp" />
+
+        <EditText
+            android:id="@+id/etUsernamePatientSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/text_box"
+            android:backgroundTint="#9CBDF0"
+            app:endIconMode="clear_text"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tvEmailPatientSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="0dp"
+            android:paddingLeft="7dp"
+            android:text="Email Address"
+            android:textColor="@color/black"
+            android:textSize="26sp" />
+
+        <EditText
+            android:id="@+id/etEmailPatientSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/text_box"
+            android:backgroundTint="#9CBDF0"
+            android:ems="10"
+            app:endIconMode="clear_text"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tvPasswordPatientSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="0dp"
+            android:paddingLeft="7dp"
+            android:text="Password"
+            android:textColor="@color/black"
+            android:textSize="26sp" />
+
+        <EditText
+            android:id="@+id/etPatientPasswordsignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/text_box"
+            app:endIconMode="password_toggle"
+
+            android:backgroundTint="#9CBDF0"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tvConfirmPasswordDoctorSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="0dp"
+            android:paddingLeft="7dp"
+            android:text="Confirm Password"
+            android:textColor="@color/black"
+            android:textSize="26sp" />
+
+        <EditText
+            android:id="@+id/etConfirmPasswordSignUpPatient"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/text_box"
+            android:backgroundTint="#9CBDF0"
+            android:ems="10"
+            app:endIconMode="password_toggle"
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btnPatientSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#8292F2"
+            android:text="Submit"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
