@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navfirst"
+    app:startDestination="@id/patientFragment">
+    <fragment
+        android:id="@+id/patientFragment"
+        android:name="com.example.medicineproject.UserAccountManagement.LoginFragment.LoginFragment"
+        android:label="fragment_patient"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_patientFragment_to_patientSignUpFragment"
+            app:destination="@id/patientSignUpFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/patientSignUpFragment"
+        android:name="com.example.medicineproject.UserAccountManagement.SignUp.PatientSignUpFragment"
+        android:label="fragment_patient_sign_up"
+        tools:layout="@layout/fragment_patient_sign_up" >
+        <action
+            android:id="@+id/action_patientSignUpFragment_to_patientFragment"
+            app:destination="@id/patientFragment" />
+    </fragment>
+</navigation>
